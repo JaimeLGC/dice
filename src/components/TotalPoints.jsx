@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+// Constante que guarda el div con los puntos totales
 const TotalPoints = ({ score }) => {
   return (
     <PointsContainer>
@@ -11,6 +12,7 @@ const TotalPoints = ({ score }) => {
 
 export default TotalPoints;
 
+// Estilos
 const PointsContainer = styled.div`
     max-width: 200px;
     text-align: center;

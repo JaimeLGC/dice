@@ -1,10 +1,12 @@
 import styled from "styled-components"
 
+// Constante que guarda el div con las reglas del juego
 const Rules = () => {
   return (
     <RulesContainer>
         <h2>Cómo jugar</h2>
         <div className="text">
+            <p>- Comienzas con 100 puntos con los que puedes jugar</p>
             <p>- Selecciona una opción.</p>
             <p>- Haz click en el dado para lanzarlo.</p>
             <p>- En caso de seleccionar un número, estarás apostando la cantidad acorde al número seleccionado.</p>
@@ -16,6 +18,7 @@ const Rules = () => {
 
 export default Rules
 
+// Estilos
 const RulesContainer = styled.div`
     max-width: 800px;
     margin: 0 auto;

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+// Constantes para los botones tanto en la pantalla de inicio como en la de juego
 export const Button = styled.button`
   color: white;
   padding: 10px 18px;

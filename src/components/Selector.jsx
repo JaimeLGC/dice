@@ -2,14 +2,17 @@ import { useState } from "react";
 import styled from "styled-components";
 
 const Selector = ({ error, setError, selectedNumber, setSelectedNumber }) => {
+  // Números seleccionables en dos filas
   const arrNumber1 = [1, 2, 3, 4, 5, 6];
   const arrNumber2 = [7, 8, 9, 10, 11, 12];
 
+  // Función que asigna el número seleccionado y elmina el error en caso de haberlo
   const numberSelectorHandler = (value) => {
     setSelectedNumber(value);
     setError("");
   };
 
+  // Div con los botones de las opciones
   return (
     <NumberSelectorContainer>
       <p>Seleccione una opción</p>
@@ -74,6 +77,7 @@ const Selector = ({ error, setError, selectedNumber, setSelectedNumber }) => {
 
 export default Selector;
 
+// Estilos
 const NumberSelectorContainer = styled.div`
   display: flex;
   flex-direction: column; 
