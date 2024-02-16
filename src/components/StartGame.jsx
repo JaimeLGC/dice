@@ -8,7 +8,7 @@ const StartGame = ({ toggle }) => {
         <img src="/img/dice.png" />        
       </div>
       <div>
-        <h1>Dados</h1>
+        <h1>Juego de Dados</h1>
         <Button onClick={toggle}>Jugar</Button>
       </div>
     </Container>
@@ -18,17 +18,19 @@ const StartGame = ({ toggle }) => {
 export default StartGame;
 
 const Container = styled.div`
-  max-width: 1180px;
+  max-width: 100%;
   height: 100vh;
   display: flex;
   margin: 0 auto;
   align-items: center;
 
-  .content {
-    h1 {
+  h1 {
       font-size: 90px;
       white-space: nowrap;
     }
+  img {
+    max-width: 300px;
+    margin: 20px;
   }
 `;
 

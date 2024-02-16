@@ -13,7 +13,7 @@ export const Button = styled.button`
   transition: 0.5s background ease-in;
 
   &:hover {
-    background-color: 383838;
+    background-color: purple;
     border: 1px solid black;
     transition: 0.3s background ease-in;
   }
@@ -24,7 +24,7 @@ export const OutlineButton = styled(Button)`
   border: 1px solid black;
   color: black;
   &:hover {
-    background-color: black;
+    background-color: purple;
     color: white;
     border: 1px solid transparent;
   }

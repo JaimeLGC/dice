@@ -12,7 +12,7 @@ const Selector = ({ error, setError, selectedNumber, setSelectedNumber }) => {
 
   return (
     <NumberSelectorContainer>
-      <p className="error">{error}</p>
+      <p>Seleccione una opción</p>
       <div className="flex">
         {
           arrNumber1.map((value, i) => (
@@ -67,7 +67,7 @@ const Selector = ({ error, setError, selectedNumber, setSelectedNumber }) => {
             7 - 12
         </Rectangle>
       </div>
-      <p>Select Number</p>
+      <p className="error">{error}</p>
     </NumberSelectorContainer>
   );
 };
@@ -88,6 +88,7 @@ const NumberSelectorContainer = styled.div`
   p {
     font-size: 24px;
     font-weight: 700px;
+    margin-right: 30px;
   }
   .error {
     color: red;

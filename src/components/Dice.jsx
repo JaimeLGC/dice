@@ -16,7 +16,7 @@ const Dice = ({ rollDice, currentDice1, currentDice2 }) => {
 export default Dice
 
 const DiceContainer = styled.div`
-  margin-top: 50px;
+  margin-top: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;

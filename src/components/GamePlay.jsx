@@ -20,7 +20,7 @@ const GamePlay = () => {
 
   const rollDice = () => {
     if(!selectedNumber) {
-      setError("Selecciona un número");
+      setError("Selecciona una opción");
       return;
     };
     const randomNumber1 = generateRandomNumber(1, 7);
@@ -86,7 +86,7 @@ const MainContainer = styled.main`
    align-items: end;
   }
   .btns {
-    margin-top: 40px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
