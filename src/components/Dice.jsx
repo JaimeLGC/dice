@@ -9,7 +9,7 @@ const Dice = ({ rollDice, currentDice1, currentDice2 }) => {
         <img src={`/img/dice/dice-${currentDice1}.png`} alt="dice 1" />
         <img src={`/img/dice/dice-${currentDice2}.png`} alt="dice 2" />
       </div>
-      <p>Haz click en el dado para lanzar</p>
+      <p>Haz click en los dados para lanzarlos</p>
     </DiceContainer>
   )
 }
