@@ -24,11 +24,14 @@ const GamePlay = () => {
     };
     const randomNumber = generateRandomNumber(1, 7);
     setCurrentDice((prev) => randomNumber);
-
-    if(selectedNumber == randomNumber){
+    if(selectedNumber == "par" && randomNumber % 2 == 0 || selectedNumber == "impar" && randomNumber % 2 != 0){
+      setScore((prev) => prev + 6);
+    }else if(selectedNumber == "par" && randomNumber % 2 != 0 || selectedNumber == "impar" && randomNumber % 2 == 0){
+      setScore((prev) => prev - 6);
+    }else if(selectedNumber == randomNumber){
       setScore((prev) => prev + randomNumber);
     }else{
-      setScore((prev) => prev - 2);
+      setScore((prev) => prev - randomNumber);
     }
 
     setSelectedNumber(undefined);
