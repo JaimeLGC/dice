@@ -9,7 +9,8 @@ import Rules from "./Rules";
 const GamePlay = () => {
   const [score, setScore] = useState(100);
   const [selectedNumber, setSelectedNumber] = useState();
-  const [currentDice, setCurrentDice] = useState(1);
+  const [currentDice1, setCurrentDice1] = useState(1);
+  const [currentDice2, setCurrentDice2] = useState(1);
   const [error, setError] = useState("");
   const [showRules, setShowRules] = useState(false);
 
@@ -22,11 +23,19 @@ const GamePlay = () => {
       setError("Selecciona un número");
       return;
     };
-    const randomNumber = generateRandomNumber(1, 7);
-    setCurrentDice((prev) => randomNumber);
+    const randomNumber1 = generateRandomNumber(1, 7);
+    const randomNumber2 = generateRandomNumber(1, 7);
+    setCurrentDice1((prev) => randomNumber1);
+    setCurrentDice2((prev) => randomNumber2);
+    const randomNumber = randomNumber1 + randomNumber2
+
     if(selectedNumber == "par" && randomNumber % 2 == 0 || selectedNumber == "impar" && randomNumber % 2 != 0){
       setScore((prev) => prev + 6);
     }else if(selectedNumber == "par" && randomNumber % 2 != 0 || selectedNumber == "impar" && randomNumber % 2 == 0){
+      setScore((prev) => prev - 6);
+    }else if(selectedNumber == "1-6" && randomNumber <= 6 || selectedNumber == "7-12" && randomNumber >= 7){
+        setScore((prev) => prev + 6);
+    }else if(selectedNumber == "1-6" && randomNumber > 6 || selectedNumber == "7-12" && randomNumber <= 6){
       setScore((prev) => prev - 6);
     }else if(selectedNumber == randomNumber){
       setScore((prev) => prev + randomNumber);
@@ -53,7 +62,8 @@ const GamePlay = () => {
         />
       </div>
       <Dice 
-        currentDice={currentDice}
+        currentDice1={currentDice1}
+        currentDice2={currentDice2}
         rollDice={rollDice}
       />
       <div className="btns">

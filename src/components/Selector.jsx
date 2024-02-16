@@ -53,6 +53,20 @@ const Selector = ({ error, setError, selectedNumber, setSelectedNumber }) => {
             Impar
         </Rectangle>
       </div>
+      <div className="flex">
+        <Rectangle 
+          isselected={selectedNumber == "1-6"} 
+          key={"1-6"} 
+          onClick={() => numberSelectorHandler("1-6")}>
+            1 - 6
+        </Rectangle>
+        <Rectangle 
+          isselected={selectedNumber == "7-12"} 
+          key={"7-12"} 
+          onClick={() => numberSelectorHandler("7-12")}>
+            7 - 12
+        </Rectangle>
+      </div>
       <p>Select Number</p>
     </NumberSelectorContainer>
   );
