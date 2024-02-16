@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { Button } from "../styled/button";
 
 const StartGame = ({ toggle }) => {
   return (
@@ -8,7 +9,7 @@ const StartGame = ({ toggle }) => {
       </div>
       <div>
         <h1>Dados</h1>
-        <button onClick={toggle}>Jugar</button>
+        <Button onClick={toggle}>Jugar</Button>
       </div>
     </Container>
   );
@@ -31,21 +32,3 @@ const Container = styled.div`
   }
 `;
 
-const Button = styled.button`
-  color: white;
-  padding: 10px 18px;
-  background: black;
-  border-radius: 5px;
-  min-width: 220px;
-  border: none;
-  font-size: 15px;
-  border: 1px solid transparent;
-  cursor: pointer;
-  transition: 0.5s background ease-in;
-
-  &:hover {
-    background-color: 383838;
-    border: 1px solid black;
-    transition: 0.3s background ease-in;
-  }
-`;

@@ -23,7 +23,9 @@ const DiceContainer = styled.div`
   .dice {
     cursor: pointer;
   }
-
+  img {
+    width: 200px;
+  }
   p {
     font-size: 25px;
   }
