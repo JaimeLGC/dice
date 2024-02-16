@@ -8,7 +8,7 @@ const Rules = () => {
         <div className="text">
             <p>- Comienzas con 100 puntos con los que puedes jugar</p>
             <p>- Selecciona una opción.</p>
-            <p>- Haz click en el dado para lanzarlo.</p>
+            <p>- Haz click en los dados para lanzarlos.</p>
             <p>- En caso de seleccionar un número, estarás apostando la cantidad acorde al número seleccionado.</p>
             <p>- En caso de selecciónar otra de las opciones, estarás apostando 6 puntos.</p>
         </div>
