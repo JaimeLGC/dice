@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-// Constante que guarda el div con las reglas del juego
+// Guarda el div con las reglas del juego
 const Rules = () => {
   return (
     <RulesContainer>

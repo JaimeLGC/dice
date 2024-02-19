@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-// Constante que guarda los dos dados
+// Guarda los dos dados
 const Dice = ({ rollDice, currentDice1, currentDice2 }) => {
 
   return (

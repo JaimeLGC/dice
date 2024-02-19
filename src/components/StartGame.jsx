@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { Button } from "../styled/button";
 
-// Constante que guarda el div de la pantalla inicial
+// Guarda el div de la pantalla inicial
 const StartGame = ({ toggle }) => {
   return (
     <Container>

@@ -6,7 +6,7 @@ import { useState } from "react";
 import { Button, OutlineButton } from "../styled/button";
 import Rules from "./Rules";
 
-// Constante que guarda el flujo del juego
+// Guarda el flujo del juego
 const GamePlay = () => {
   // Constantes que guardan los archivos externos necesarios
   const [score, setScore] = useState(100);

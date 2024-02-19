@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-// Constante que guarda el div con los puntos totales
+// Guarda el div con los puntos totales
 const TotalPoints = ({ score }) => {
   return (
     <PointsContainer>
